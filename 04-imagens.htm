@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Imagens | HTML </title>
+</head>
+
+<body>
+    <h1>Trabalhando com Imagens</h1>
+  <hr>
+
+  <p>Trabalhando com o elemento de &lt;img&gt;</p>
+  <img src="Cozinha.avif" alt="Cozinha casual com bancada e um tablet" width="500"   >
+<!-- Width para definir o tamanho da imagem -->
+
+
+  <p>Entendendo os atributos</p>
+  <ul>
+        <li> <strong> src </strong>: Source/fonte: É o caminho onde a imagem está hospedada/armazenada. Pode ser um caminho local ou um link direto da internet. </li>
+        <li> <strong>alt/alternative. É uma breve descrição de imagem. É crucial para acessibilidade </strong> e como fallback</li>
+  </ul>
+
+<h2>Trabalhando com recursos externos</h2>
+<p>Configurando imagens externas</p>
+
+<img src="https://marketplace.canva.com/Gnoos/MAGRZQGnoos/1/tl/canva-ondas-tranquilas-do-oceano-em-uma-praia-ensolarada-MAGRZQGnoos.jpg" alt="Lindo oceano azul e céu limpo com nuvens brancas representando uma tarde de verão na praia." height="500" >
+
+<h2>Outras Abordagens</h2>
+<h3>Elemento Figure</h3>
+<figure>
+  <img src="Bolo-de-cenoura-S-768x768.webp" alt="Delicioso bolo de cenoura com cobertura de chocolate, ideal para café da tarde." width="600" height="400">
+
+  <figcaption> Bolo de cenoura com cobertura de chocolate para café da tarde. -Foto: Liandra Lins </figcaption>
+</figure>
+<!-- para legendar fotos -->
+
+<h3>Elemento picture</h3>
+<p>Utilizamos o elemento &lt; picture &gt; serve para controlarmos qual arquivo será utilizado de acordo com determinadas condições.</p>
+
+<picture>
+  <source media="(max-width: 600px)" srcset="https://marketplace.canva.com/Gnoos/MAGRZQGnoos/1/tl/canva-ondas-tranquilas-do-oceano-em-uma-praia-ensolarada-MAGRZQGnoos.jpg">
+
+<source media="(min-width: 601px)" srcset="Bolo-de-cenoura-S-768x768" >
+
+<img src="Bolo-de-cenoura-S-768x768.webp" alt=" Delicioso Bolo de Cenoura">
+
+<!-- mesma imagem porem para dispositivos diferentes -->
+<!-- img como fallback (plano B) - caso não seja possível utilizar alguma imagem configurada no source acima, o navegador entrega a imagem do img -->
+</picture>
+<hr>
+
+
+<h2>Sobe os tipos de imagens</h2>
+<p>Você pode encontrar um acervo muito grande de tipos de imagens. A escolha de imagem certa pode elevar a perfomance do seu site. Veja a lista abaixo:</p>
+<ul>
+<li> <strong>JPEG/JPG </strong>: Bom para fotografias, produtos fotografados, imagens com muitas cores e detalhes. Se você tentar otimizar demais, a perda de qualidade se torna visível. </li>
+
+<li> <strong>PNG</strong>: Suporta transparência e é muito bom para imagnes que precisam preservar certos detalhes, como por exemplo: logos, imagens que precisam de transparencia e etc.  </li>
+
+<li> <strong> WEBP </strong>: Formato recente desenvolvido com foco na web. Além de também suportar transparência, também consegue trabalhar com imagens em alta definição. Excelente escolha para fotografias, imagens de produtos, imagnes com transparencia e imagens gerais. </li>
+
+<li> <strong> AVIF </strong>: É um formato mais recente e também muito eficiente. É um excelente, para fotografia, imagens grandes, sites onde desempenho e economia de dados são extremamentes importantes </li>
+
+<li> <strong> SVG </strong> É um elemento vetorial, excelente para logos, ícones, símbolos e etc. </li>
+</ul>
+
+</body>
+</html>

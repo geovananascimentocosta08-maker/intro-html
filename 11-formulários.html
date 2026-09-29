@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Formulários | HTML </title>
+
+<style>
+body {
+    background-color: #1a1a1a;
+    color: #fcfcfc;
+    font-family: sans-serif;
+}
+
+</style>
+
+</head>
+<body>
+    <header>
+<h1> Sobre Formulários </h1>
+
+<main>
+<section>
+    <h2> O que são formulários?  </h2>
+<p> Os formulários são uma das partes mais importantes do nosso <abbr title="HyperText Markup Language"> HTML </abbr> semântico. Ele serve para: </p>
+<ul>
+<li>  Entrada de dados </li>
+<li>Interação</li>
+<li>Acessibilidade</li>
+<li>Validação e envio de informações</li>
+</ul>
+</section>
+
+<section>
+    <h2> Como trabalhar com um forms no HTML </h2>
+    <p>Para começarmos a trabalhar com um formulário dentro do HTML, utilizamos o elemento de &lt; form &gt; </p>
+<p> Esse elemento, representa um formulário interativo. </p>
+
+<h3> Criando a estrutura básica </h3>
+
+<form>  
+    <!-- Exemplo básico -->
+    <input type="text"> <br>
+
+<label for="nome"> Nome </label> <br>
+
+<input type="text" name="nome" id="nome"> <br>
+<!-- br: para quebrar linhas -->
+<label for="email"> Email </label> <br>
+
+    <input type="email" name="" id="email"> <br>
+
+    <input type="password" name="" id=""> <br>
+
+    <input type="date" name="" id=""> <br>
+
+    <input type="tel" name="" id=""> <br>
+    
+<label>
+<input type="checkbox" name="" id=""> 
+Aceito os termos de uso
+</label>
+<button> 
+Enviar formulário
+</button>
+</form>
+</section>
+
+<section>
+<h2> Formulários Agrupados </h2>
+<p> Para criarmos formulários agrupados, utilizamos o elemento &lt; fielset &gt; e &lt; legend &gt;. </p>
+<form action="">
+    <fieldset>
+
+        <legend> Informações Pessoais </legend>
+        <label for="nome-cadastro">Nome</label> <br>
+        <input type="text" name="nome-cadastro" id="nome-cadastro" placeholder="Geovana Nascimento Costa" required > <br>
+
+<label for="email-cadastro">Email</label> <br>
+<input type="email-cadastro" name="email-cadastro" id="email-cadastro" placeholder="geovananascimentocosta08.com" > <br>
+   </fieldset>
+
+<fieldset>
+<legend> Endereço  </legend>
+
+<label for="cep">CEP</label> <br>
+<input type="text" name="cep" id="cep" placeholder="04321-000" > <br>
+
+<label for="rua">Rua</label> <br>
+<input type="text" name="rua" id="rua"  placeholder="Rua dos buritis 306" > <br>
+
+<textarea name="" id="" maxlength="60" ></textarea>
+
+</fieldset>
+<button> Enviar Formulário </button>
+
+<section>
+    <h2> Formulário da Geovana </h2>
+<form>
+
+<label for="html">HTML</label>
+<input type="checkbox" name="html" id="html" required  >
+
+<label for="css"> CSS </label>
+<input type="checkbox" name="css" id="css" required >
+
+<label for="javascript">JavaScript</label>
+<input type="checkbox" name="javascript" id="javascript" required > <br>
+
+<label for="estado"> Estado </label>
+<select name="estado" id="estado">
+<option value="sp"> São Paulo </option>
+<option value="rj"> Rio de Janeiro </option>
+<option value="mg">Minas Gerais</option>
+</select>
+
+
+<button type="submit">  Enviar os mimos para a GI  </button>
+</form>
+</section>
+
+</form>
+</section>
+
+
+</main>
+
+</header>
+</body>
+</html>
+
+<!-- não pode haver id semelhantes  -->
